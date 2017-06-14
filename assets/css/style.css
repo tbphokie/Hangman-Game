@@ -1,0 +1,59 @@
+body {
+
+    line-height: 24px;
+    
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+	line-height: 36px;
+}
+
+#gameBoard {
+	padding: 10px;
+}
+#instruct {
+
+    color: red;
+    border-size: 5px;
+    border-color: white;
+    border-style: solid;
+    padding: 10px;
+    min-height: 450px;
+   
+}
+
+#hangMan {
+
+     border-size: 5px;
+    border-color: white;
+    border-style: solid;  
+    min-height: 500px;
+}
+
+#gallows {
+
+     border-size: 5px;
+    border-color: blue;
+    border-style: white;  
+ }
+
+ h2 {
+ 	color: gray;
+ 	line-height: 24px;
+	text-align: center;
+	letter-spacing: 3px;
+ }
+
+
+ p {
+ 	text-align: center;
+ 	color: gray;
+ 	letter-spacing: 4px;
+ 	line-height: 8px;
+ }
