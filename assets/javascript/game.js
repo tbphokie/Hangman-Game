@@ -117,6 +117,10 @@
       //Function displayWord:
       //  called to display on the screen the current word play with the appropriate
       //    underscores and letters displayed
+
+      //Alert: I know this code needs to be cleaned up/organized but ran out of time by the time I broke the game 1000 times
+      // and now afraid to try to fix it right now just in case I can't fix it in time
+
       function displayWord()
       {
         var text;
@@ -266,14 +270,12 @@
 
     // This is run whenever the user presses a key.
     document.onkeyup = function(event) {
-
+        //At start of each game, a button (any buton) has to pressed to start the game
         if(bStarted)
         {
-
-
-          
+   
           // Determines which key was pressed
-          var userGuess = event.key.toLowerCase();
+          var userGuess = event.key.toLowerCase();  //always displays as lower-case to the user on the screen
           var tempWord = curWord.toUpperCase();
           var tempGuess = userGuess.toUpperCase();
 
