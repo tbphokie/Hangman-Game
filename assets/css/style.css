@@ -1,50 +1,61 @@
-body {
-
-    line-height: 24px;
-    
-}
-
-html {
+html{
 	height: 100%;
-	width: 100%;
+	width:100%;
 }
+body {
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+    line-height: 20px;
+    background-image: url("../images/cross-minimalistic_00407093.jpg");
+    background-size: cover;
+
+}
+
 
 h1 {
 	text-align: center;
-	line-height: 36px;
+	line-height: 48px;
+	margin-bottom: 12px;
 }
 
 #gameBoard {
 	padding: 10px;
 }
 #instruct {
-
-    color: red;
-    border-size: 5px;
+	background-color: white;
+    color: rgb(213,45,31);
+    /*border-size: 5px;
     border-color: white;
-    border-style: solid;
+    border-style: solid;*/
     padding: 10px;
     min-height: 450px;
-   
+   background:transparent;
 }
 
 #hangMan {
-
+	background-color: white;
+	margin-top: 24px;
      border-size: 5px;
-    border-color: white;
-    border-style: solid;  
+    /*border-color: white;
+    border-style: solid; */ 
     min-height: 500px;
+    background:transparent;
 }
 
 #gallows {
+	background-color: white;
+    /*border-size: 5px;	
+    border-color: white;
+    border-style: solid;  */
+    background:transparent;
+ }
 
-     border-size: 5px;
-    border-color: blue;
-    border-style: white;  
+ #tvDiv{
+	background-size: cover;	
  }
 
  h2 {
- 	color: gray;
+ 	color: rgb(213,45,31);
  	line-height: 24px;
 	text-align: center;
 	letter-spacing: 3px;
@@ -53,7 +64,71 @@ h1 {
 
  p {
  	text-align: center;
- 	color: gray;
+ 	color: rgb(213,45,31);
  	letter-spacing: 4px;
- 	line-height: 8px;
+ 	line-height: 10px;
  }
+
+ h3 {
+ 	text-align: center;
+ 	color: rgb(213,45,31);/*black;*/
+ 	letter-spacing: 4px;
+ 	line-height: 10px;
+ }
+
+ /* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hide;
+    width: 300px;
+    background-color: #555;
+    color: rgb(213,45,31);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}

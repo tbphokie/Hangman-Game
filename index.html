@@ -1,52 +1,59 @@
 <!Doctype html>
 <html lang="en-us">
 	<head>
-		<title>TV Mystery Hangman</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
+	<title>TV Mystery Hangman</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-	<body onload="getWord()">
-		<script src="assets/javascript/game.js"></script>
-		<div class="container">
-		    <div id="gameBoard">
-				<div class="row">
-			    	<div class="col-lg-6" id="instruct" i>
-			    		<h1>Mystery Tv Show Hangman</h1>
-						<img = src="assets/images/tvMystery.jpg" class="img-responsive">
-			    		<br>
-						<ul>
-							<li>This is simple Hangman game.</li>
-							<li>You have 6 tries to guess the tv show's title.</li>
-							<li>You have xx tries remaining.</li>
-						</ul>
+<body>
+	<script src="assets/javascript/game.js"></script>
+	<div class="container">
+		<div id="gameBoard">
+			<div class="row">
+				<div class="col-lg-6" id="instruct">
+					<h1>Mystery Tv Show Hangman</h1>
+					<div id="tvDiv">
+						<img src="assets/images/tvTransparent.png" class="img-responsive center-block" id="mysteryPic">
 					</div>
-			    	<div class="col-lg-6" id="hangMan">
-			    		
-			    		<div class="row">
-				    		<div class="col-lg-12" id="gallows">
-								<img src="assets/images/hangmanStart.png" class="img-responsive">
-							</div>
-							<div class="col-lg-12" id="title">
-								<h2>________</h2>
-								<br>
-								<p>Tries Remaining: 6</p>
-								<p>Wins: 0</p>
-								<p>Losses: 0</p>
-							</div>
-							<div class="col-lg-12" id="used">
-								<br>
-								<p>Used Letters:</p>
-								<p>                          </p>
-							</div>
+					<br>
+					<ul>
+						<li>This is simple Hangman game.</li>
+						<li>You have 6 tries to guess the tv show's title.</li>
+						<li>Press any key to get started.</li>
+					</ul>
+				</div>
+				<div class="col-lg-6" id="hangMan">
+
+					<div class="row">
+						<div class="col-lg-12" id="gallows">
+							<img src="assets/images/hangmanStart.png" class="img-responsive center-block">
+						</div>
+						<div class="col-lg-12" id="title">
+							<h2>      </h2>
+							<br>
+							<h3>Tries Remaining: 6</h3>
+							<h3>Losses: 0</h3>
+						</div>
+						<div class="col-lg-12" id="used">
+							<br>
+							<h3>Used Letters:</h3>
+							<h3>                          </h3>
 						</div>
 					</div>
+<!--				<div class="row">
+						<div class="popup">
+  							<span class="popuptext" id="myPopup">YOU WON!</span>
+						</div>
+					</div> -->	
 				</div>
 			</div>
+		</div>
 
-	    </div>
-    	
-	</body>
+	</div>
+
+</body>
 </html>
