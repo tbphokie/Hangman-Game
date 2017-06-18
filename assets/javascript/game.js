@@ -184,6 +184,7 @@
           
         }
 
+        //Determine if this is a win or loss and change display appropriately
         text += "</h3><br>";
         if(blankCount == 0 && wrongGuess == 0)
         {
@@ -198,7 +199,7 @@
         text += "<h3>Losses: " + losses + "</h3>";
         document.querySelector("#title").innerHTML = text; 
         
-        if(remaining == 0)
+        if(remaining+earned == 0)
         {
           losses++;
           var imgText = "";
@@ -218,7 +219,7 @@
         }
 
         //Start next game automatically
-        if(blankCount == 0 || remaining == 0)
+        if(blankCount == 0 || (remaining +earned)== 0)
         {          
           bStarted = false;  
         }    
