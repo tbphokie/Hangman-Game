@@ -253,19 +253,19 @@
      function UpdateHangedMan()
      {
         if(remaining+earned >= 6)
-          document.querySelector("#gallows").innerHTML = "<img src=\"assets/images/hangmanStart.png\" class=\"img-responsive center-block\">";
+          document.querySelector("#gallows").innerHTML = "<img src=\"assets/images/HangmanStart.png\" class=\"img-responsive center-block\">";
         else if(remaining+earned == 5)
-          document.querySelector("#gallows").innerHTML = "<img src=\"assets/images/hangmanOne.png\" class=\"img-responsive center-block\">";
+          document.querySelector("#gallows").innerHTML = "<img src=\"assets/images/HangmanOne.png\" class=\"img-responsive center-block\">";
         else if(remaining+earned == 4)
-          document.querySelector("#gallows").innerHTML = "<img src=\"assets/images/hangmanTwo.png\" class=\"img-responsive center-block\">";
+          document.querySelector("#gallows").innerHTML = "<img src=\"assets/images/HangmanTwo.png\" class=\"img-responsive center-block\">";
         else if(remaining+earned == 3)
-          document.querySelector("#gallows").innerHTML = "<img src=\"assets/images/hangmanThree.png\" class=\"img-responsive center-block\">";
+          document.querySelector("#gallows").innerHTML = "<img src=\"assets/images/HangmanThree.png\" class=\"img-responsive center-block\">";
         else if(remaining+earned == 2)
-          document.querySelector("#gallows").innerHTML = "<img src=\"assets/images/hangmanFour.png\" class=\"img-responsive center-block\">";
+          document.querySelector("#gallows").innerHTML = "<img src=\"assets/images/HangmanFour.png\" class=\"img-responsive center-block\">";
         else if(remaining+earned == 1)
-          document.querySelector("#gallows").innerHTML = "<img src=\"assets/images/hangmanFive.png\" class=\"img-responsive center-block\">";
+          document.querySelector("#gallows").innerHTML = "<img src=\"assets/images/HangmanFive.png\" class=\"img-responsive center-block\">";
         else
-          document.querySelector("#gallows").innerHTML = "<img src=\"assets/images/hangmanFinished.png\" class=\"img-responsive center-block\">";
+          document.querySelector("#gallows").innerHTML = "<img src=\"assets/images/HangmanFinished.png\" class=\"img-responsive center-block\">";
 
     }
 
